@@ -1,5 +1,7 @@
 # spacepy
 
+!(https://www.spaceelements.com/wp-content/uploads/2022/03/space-elements-square-logo.jpg)
+
 Spacepy is meant to be a Python library which provides many of the functions required in Astronomy, Astrophysics, Math, etc. as well as useful integration mechanisms and various procedural workflows required in the sciences. The library was created by the Founder of Space Elements Corporation, [Ira Bell](https://github.com/IraLeeBell). 
 
 Planned/Upcoming Work/Issues/etc. will all be tracked in this repo for now. 
