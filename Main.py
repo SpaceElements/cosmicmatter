@@ -1,15 +1,15 @@
 #####################
-# SpacePy
+# Cosmic Matter
 # 
 # Created by Ira Bell
 # 
-# License: Spacepy is goverened under a BSD 3-Clause "New" or 
+# License: Cosmic Matter is goverened under a BSD 3-Clause "New" or 
 # "Revised" License, which is a permissive license similar to 
 # the BSD 2-Clause License, but with a 3rd clause that prohibits 
 # others from using the name of the project or its contributors 
 # to promote derived products without written consent.
 #
-# GitHub: https://github.com/SpaceElements/spacepy
+# GitHub: https://github.com/SpaceElements/cosmicmatter
 # 
 #####################
 
@@ -115,7 +115,7 @@ def room_1001():
   global currentRoomNumber
   currentRoomNumber = 1001
   print("")
-  print(bcolors.YELLOW + "The Great SpacePy Library")
+  print(bcolors.YELLOW + "The Great Cosmic Matter Library")
   print("")
   print(bcolors.GREY + "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-" + bcolors.ENDC)
   print(bcolors.WHITE + "A dusty book is" + bcolors.GREEN + " " + "floating" + " " + bcolors.WHITE + "here" + bcolors.ENDC)
@@ -285,7 +285,7 @@ def initial_menu():
 #  elif menuChoice == "open script":
 #    import subprocess
 #    subprocess.call([r'C:\Users\Space\Desktop\Scripts\script.bat'])
-#    subprocess.call([r'c:\Progra~1\Sublim~1\subl.exe c:\Users\space\Desktop\spacepy\delscript.bat'])
+#    subprocess.call([r'c:\Progra~1\Sublim~1\subl.exe c:\Users\space\Desktop\cosmicmatter\delscript.bat'])
 #    print(bcolors.GREY + "" + bcolors.ENDC)
 #    print(bcolors.WHITE + "-> 'The hologram releases his grasp from your hand.'"+ bcolors.ENDC)
 #    initial_menu()
@@ -299,7 +299,7 @@ def initial_menu():
 
 def credits():
   print(bcolors.GREY + "_________________________________________" + bcolors.ENDC)
-  print(bcolors.GREY + " ->" + " " + bcolors.SOFTCYAN + "SpacePy" + bcolors.ENDC)
+  print(bcolors.GREY + " ->" + " " + bcolors.SOFTCYAN + "Cosmic Matter" + bcolors.ENDC)
   print(bcolors.GREY + " -> Version:" + " " + bcolors.SOFTGREEN + "0.01a" + bcolors.ENDC)
   print(bcolors.GREY + " -> Release:" + " " + bcolors.SOFTGREEN + "March 20th, 2022" + bcolors.ENDC)
   print(bcolors.GREY + "_________________________________________" + bcolors.ENDC)
@@ -338,7 +338,7 @@ def welcomeScreen():
   print(bcolors.WHITE + "-> 'Ohh how I wish someone would name me.'"+ bcolors.ENDC)
   print(bcolors.GREY + "" + bcolors.ENDC)
   print(bcolors.GREY + "The holographic figure grins at you and says:"+ bcolors.ENDC)
-  print(bcolors.WHITE + "-> 'Welcome to" + bcolors.SOFTCYAN + " " + "SpacePy"+ bcolors.WHITE + ", traveler.'" + bcolors.ENDC)
+  print(bcolors.WHITE + "-> 'Welcome to" + bcolors.SOFTCYAN + " " + "Cosmic Matter"+ bcolors.WHITE + ", traveler.'" + bcolors.ENDC)
 
 #########################
 # Main Code Here        #
