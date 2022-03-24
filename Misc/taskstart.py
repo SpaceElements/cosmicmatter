@@ -3,7 +3,9 @@ import subprocess
 # add current Windows user profile to below variable
 userProfile = "space"
 
+
 # add desired application file paths here to start
+# note - some apps won't load in an elevated terminal (e.g. run as administrator / onedrive)
 oneDrive = "C:\\Users\\" + userProfile + "\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe"
 thinTeams = "C:\\Users\\space\\AppData\\Local\\Microsoft\\WindowsApps\\msteams.exe"
 fatTeams = "C:\\Program Files (x86)\\Teams Installer\\Teams.exe"
