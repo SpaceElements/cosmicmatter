@@ -2,8 +2,23 @@ import os
 import time
 
 # The following program converts:
-# (mi) -> km, m, cm, mm, µm, nm, yd, ft, in, NM, ly
-# 
+# (mi) -> km, m, cm, mm, µm, nm, yd, ft, in, NM, ly, pc, kjpc, Mpc, AU
+# (m) -> km, m, cm, mm, µm, nm, yd, ft, in, NM, ly, pc, kjpc, Mpc, AU
+# (km) -> km, m, cm, mm, µm, nm, yd, ft, in, NM, ly, pc, kjpc, Mpc, AU
+# (cm) -> km, m, cm, mm, µm, nm, yd, ft, in, NM, ly, pc, kjpc, Mpc, AU
+# (mm) -> km, m, cm, mm, µm, nm, yd, ft, in, NM, ly, pc, kjpc, Mpc, AU
+# (µm) -> km, m, cm, mm, µm, nm, yd, ft, in, NM, ly, pc, kjpc, Mpc, AU
+# (nm) -> km, m, cm, mm, µm, nm, yd, ft, in, NM, ly, pc, kjpc, Mpc, AU
+# (yd) -> km, m, cm, mm, µm, nm, yd, ft, in, NM, ly, pc, kjpc, Mpc, AU
+# (ft) -> km, m, cm, mm, µm, nm, yd, ft, in, NM, ly, pc, kjpc, Mpc, AU
+# (in) -> km, m, cm, mm, µm, nm, yd, ft, in, NM, ly, pc, kjpc, Mpc, AU
+# (NM) -> km, m, cm, mm, µm, nm, yd, ft, in, NM, ly, pc, kjpc, Mpc, AU
+# (ly) -> km, m, cm, mm, µm, nm, yd, ft, in, NM, ly, pc, kjpc, Mpc, AU
+# (pc) -> km, m, cm, mm, µm, nm, yd, ft, in, NM, ly, pc, kjpc, Mpc, AU
+# (kpc) -> km, m, cm, mm, µm, nm, yd, ft, in, NM, ly, pc, kjpc, Mpc, AU
+# (Mpc) -> km, m, cm, mm, µm, nm, yd, ft, in, NM, ly, pc, kjpc, Mpc, AU
+# (AU) -> km, m, cm, mm, µm, nm, yd, ft, in, NM, ly, pc, kjpc, Mpc, AU
+#
 # Whereby:
 # mi = Miles
 #  m = Meters
@@ -90,103 +105,102 @@ def meters_input(meters):
 	astronomical_units_str = print(f"\t{astronomical_units} Astronomical Units (AU)")
 	return miles_str, kilometers_str, centimeters_str, millimeters_str, micrometers_str, nanometers_str, yards_str, feet_str, inches_str, nautical_miles_str, light_years_str, parsecs_str, kiloparsecs_str, megaparsecs_str, astronomical_units_str
 
-# start here
 def kilometers_input(kilometers):
-	miles = (kilometers * 0.0006213712)
+	miles = (kilometers * 0.6213711922)
 	miles_str = print(f"\t{miles} Miles (mi)")
-	meters = (kilometers * 123)
+	meters = (kilometers * 1000)
 	meters_str = print(f"\n{meters} Meters (m)")
-	centimeters = (kilometers * 100)
+	centimeters = (kilometers * 100000)
 	centimeters_str = print(f"\t{centimeters} Centimeters (cm)")
-	millimeters = (kilometers * 1000)
+	millimeters = (kilometers * 1000000)
 	millimeters_str = print(f"\t{millimeters} Millimeters (mm)")
-	micrometers = (kilometers * 1000000)
+	micrometers = (kilometers * 1000000000)
 	micrometers_str = print(f"\t{micrometers} Micrometers (µm)")
-	nanometers = (kilometers * 1000000000)
+	nanometers = (kilometers * 1000000000000)
 	nanometers_str = print(f"\t{nanometers} Nanometers (nm)")
-	yards = (kilometers * 1.0936132983)
+	yards = (kilometers * 1093.6132983)
 	yards_str = print(f"\t{yards} Yards (yd)")
-	feet = (kilometers * 3.280839895)
+	feet = (kilometers * 3280.839895)
 	feet_str = print(f"\t{feet} Feet (ft)")
-	inches = (kilometers * 39.37007874)
+	inches = (kilometers * 39370.07874)
 	inches_str = print(f"\t{inches} Inches (in)")
-	nautical_miles = (kilometers * 0.0005396118)
+	nautical_miles = (kilometers * 0.5396118248)
 	nautical_miles_str = print(f"\t{nautical_miles} Nautical Miles (NM)")
-	light_years = (kilometers * 1.057000834E-16)
+	light_years = (kilometers * 1.057000834E-13)
 	light_years_str = print(f"\t{light_years} Light Years (ly)")
-	parsecs = (kilometers * 3.240779289E-17)
+	parsecs = (kilometers * 3.240779289E-14)
 	parsecs_str = print(f"\t{parsecs} Parsecs (pc)")
-	kiloparsecs = (kilometers * 3.240779289E-20)
+	kiloparsecs = (kilometers * 3.240779289E-17)
 	kiloparsecs_str = print(f"\t{kiloparsecs} Kiloparsecs (kpc)")
-	megaparsecs = (kilometers * 3.240779289E-23)
+	megaparsecs = (kilometers * 3.240779289E-20)
 	megaparsecs_str = print(f"\t{megaparsecs} Megaparsecs (Mpc)")
-	astronomical_units = (kilometers * 6.684587122E-12)
+	astronomical_units = (kilometers * 6.684587122E-9)
 	astronomical_units_str = print(f"\t{astronomical_units} Astronomical Units (AU)")
 	return miles_str, meters_str, centimeters_str, millimeters_str, micrometers_str, nanometers_str, yards_str, feet_str, inches_str, nautical_miles_str, light_years_str, parsecs_str, kiloparsecs_str, megaparsecs_str, astronomical_units_str
 
 def centimeters_input(centimeters):
-	miles = (centimeters * 0.0006213712)
+	miles = (centimeters * 0.0000062137)
 	miles_str = print(f"\t{miles} Miles (mi)")
-	meters = (centimeters * 123)
+	meters = (centimeters * 0.01)
 	meters_str = print(f"\n{meters} Meters (m)")
-	kilometers = (centimeters * 0.001)
+	kilometers = (centimeters * 0.00001)
 	kilometers_str = print(f"\t{kilometers} Kilometers (km)")
-	millimeters = (centimeters * 1000)
+	millimeters = (centimeters * 10)
 	millimeters_str = print(f"\t{millimeters} Millimeters (mm)")
-	micrometers = (centimeters * 1000000)
+	micrometers = (centimeters * 10000)
 	micrometers_str = print(f"\t{micrometers} Micrometers (µm)")
-	nanometers = (centimeters * 1000000000)
+	nanometers = (centimeters * 10000000)
 	nanometers_str = print(f"\t{nanometers} Nanometers (nm)")
-	yards = (centimeters * 1.0936132983)
+	yards = (centimeters * 0.010936133)
 	yards_str = print(f"\t{yards} Yards (yd)")
-	feet = (centimeters * 3.280839895)
+	feet = (centimeters * 0.032808399)
 	feet_str = print(f"\t{feet} Feet (ft)")
-	inches = (centimeters * 39.37007874)
+	inches = (centimeters * 0.3937007874)
 	inches_str = print(f"\t{inches} Inches (in)")
-	nautical_miles = (centimeters * 0.0005396118)
+	nautical_miles = (centimeters * 0.0000053961)
 	nautical_miles_str = print(f"\t{nautical_miles} Nautical Miles (NM)")
-	light_years = (centimeters * 1.057000834E-16)
+	light_years = (centimeters * 1.057000834E-18)
 	light_years_str = print(f"\t{light_years} Light Years (ly)")
-	parsecs = (centimeters * 3.240779289E-17)
+	parsecs = (centimeters * 3.240779289E-19)
 	parsecs_str = print(f"\t{parsecs} Parsecs (pc)")
-	kiloparsecs = (centimeters * 3.240779289E-20)
+	kiloparsecs = (centimeters * 3.240779289E-22)
 	kiloparsecs_str = print(f"\t{kiloparsecs} Kiloparsecs (kpc)")
-	megaparsecs = (centimeters * 3.240779289E-23)
+	megaparsecs = (centimeters * 3.240779289E-25)
 	megaparsecs_str = print(f"\t{megaparsecs} Megaparsecs (Mpc)")
-	astronomical_units = (centimeters * 6.684587122E-12)
+	astronomical_units = (centimeters * 6.684587122E-14)
 	astronomical_units_str = print(f"\t{astronomical_units} Astronomical Units (AU)")
 	return miles_str, meters_str, kilometers_str, millimeters_str, micrometers_str, nanometers_str, yards_str, feet_str, inches_str, nautical_miles_str, light_years_str, parsecs_str, kiloparsecs_str, megaparsecs_str, astronomical_units_str
 
 def millimeters_input(millimeters):
-	miles = (millimeters * 0.0006213712)
+	miles = (millimeters * 6.213711922E-7)
 	miles_str = print(f"\t{miles} Miles (mi)")
-	meters = (millimeters * 123)
+	meters = (millimeters * 0.001)
 	meters_str = print(f"\n{meters} Meters (m)")
-	kilometers = (millimeters * 0.001)
+	kilometers = (millimeters * 0.000001)
 	kilometers_str = print(f"\t{kilometers} Kilometers (km)")
-	centimeters = (millimeters * 100)
+	centimeters = (millimeters * 0.1)
 	centimeters_str = print(f"\t{centimeters} Centimeters (cm)")
-	micrometers = (millimeters * 1000000)
+	micrometers = (millimeters * 1000)
 	micrometers_str = print(f"\t{micrometers} Micrometers (µm)")
-	nanometers = (millimeters * 1000000000)
+	nanometers = (millimeters * 1000000)
 	nanometers_str = print(f"\t{nanometers} Nanometers (nm)")
-	yards = (millimeters * 1.0936132983)
+	yards = (millimeters * 0.0010936133)
 	yards_str = print(f"\t{yards} Yards (yd)")
-	feet = (millimeters * 3.280839895)
+	feet = (millimeters * 0.0032808399)
 	feet_str = print(f"\t{feet} Feet (ft)")
-	inches = (millimeters * 39.37007874)
+	inches = (millimeters * 0.0393700787)
 	inches_str = print(f"\t{inches} Inches (in)")
-	nautical_miles = (millimeters * 0.0005396118)
+	nautical_miles = (millimeters * 5.396118248E-7)
 	nautical_miles_str = print(f"\t{nautical_miles} Nautical Miles (NM)")
-	light_years = (millimeters * 1.057000834E-16)
+	light_years = (millimeters * 1.057000834E-19)
 	light_years_str = print(f"\t{light_years} Light Years (ly)")
-	parsecs = (millimeters * 3.240779289E-17)
+	parsecs = (millimeters * 3.240779289E-20)
 	parsecs_str = print(f"\t{parsecs} Parsecs (pc)")
-	kiloparsecs = (millimeters * 3.240779289E-20)
+	kiloparsecs = (millimeters * 3.240779289E-23)
 	kiloparsecs_str = print(f"\t{kiloparsecs} Kiloparsecs (kpc)")
-	megaparsecs = (millimeters * 3.240779289E-23)
+	megaparsecs = (millimeters * 3.240779289E-26)
 	megaparsecs_str = print(f"\t{megaparsecs} Megaparsecs (Mpc)")
-	astronomical_units = (millimeters * 6.684587122E-12)
+	astronomical_units = (millimeters * 6.684587122E-15)
 	astronomical_units_str = print(f"\t{astronomical_units} Astronomical Units (AU)")
 	return miles_str, meters_str, kilometers_str, centimeters_str, micrometers_str, nanometers_str, yards_str, feet_str, inches_str, nautical_miles_str, light_years_str, parsecs_str, kiloparsecs_str, megaparsecs_str, astronomical_units_str
 
@@ -552,6 +566,7 @@ def astronomical_units_input(astronomical_units):
 	megaparsecs_str = print(f"\t{megaparsecs} Megaparsecs (Mpc)")
 	return miles_str, meters_str, kilometers_str, centimeters_str, millimeters_str, micrometers_str, nanometers_str, yards_str, feet_str, inches_str, nautical_miles_str, light_years_str, parsecs_str, kiloparsecs_str, megaparsecs_str
 
+# Check whether the input is valid, and if so - whether it's an integer, scientific number or floating number
 def float_test(examine):
 	str_test = str(examine)
 	if 'e' in str_test.lower():
@@ -587,23 +602,7 @@ def float_test(examine):
 					main_program()
 
 
-# mi = Miles
-#  m = Meters
-# km = Kilometers
-# cm = Centimeters
-# mm = Millimeters
-# µm = Micrometers
-# nm = Nanometers
-# yd = Yards
-# ft = Feet
-# in = Inches
-# NM = Nautical Miles
-# ly = Light Year#
-# pc = parsec
-# kpc = Kiloparsec
-# Mpc = megaparsec
-# AU = Astronomical Unit
-
+# Main program below
 def main_program():
 	while True:
 		print(f"\nPlease input the unit classification you would like to convert from (note: this is cases sensitive)\n[mi, m, km, cm, mm, micrometers, nm, yd, ft, in, NM, ly, pc, kpc, Mpc, AU] or 'q' to quit.")
@@ -763,7 +762,6 @@ def main_program():
 	main_program()
 
 # Run main program 
-
 main_program()
 	
 
