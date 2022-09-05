@@ -1,3 +1,7 @@
+# Cosmic Matter - Unit Converter 
+# by: Ira Bell       Version 0.1 
+# Copyright (c) 2022 Space Elements
+
 import os
 import time
 
@@ -603,8 +607,10 @@ def float_test(examine):
 					main_program()
 
 
-# Main program below
 def main_program():
+	print("-=-=   Cosmic Matter - Unit Converter     =-=-")
+	print("-=-=   by: Ira Bell       Version 0.1     =-=-")
+	print("-=-=   Copyright (c) 2022 Space Elements  =-=-")
 	while True:
 		print(f"\nPlease input the unit classification you would like to convert from\n(note: this is case sensitive)\n\n[Options]:\n\n[mi, m, km, cm, mm, micrometers, nm, yd, ft, in, NM, ly, pc, \nkpc, Mpc, AU], 'cls' to clear screen or 'q' to quit.")
 		
