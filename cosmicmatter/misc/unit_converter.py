@@ -575,15 +575,15 @@ def astronomical_units_input(astronomical_units):
 def float_test(examine):
 	str_test = str(examine)
 	if 'e' in str_test.lower():
-		print(f"\n\t{examine}: Detected an 'e' in the input, evaluating if input is scientific notation.")
+		print(f"\n\t{examine}: Detected an 'e' in the input, evaluating if input is scientific notation.\n")
 		time.sleep(1)
 		try:
 			val = float(examine)
 			print(f"\n\t{examine} can be converted to a float or scientific number and is acceptable to evaluate: \n\t{val}")
 			time.sleep(1)
 		except ValueError:
-			print(f"\t{examine} is a string and not acceptable to evaluate.")
-			print(f"\tThe program will reset in five seconds.")
+			print(f"\t\n'{examine}' is a string and not acceptable to evaluate.\n")
+			print(f"The program will reset in five seconds.")
 			time.sleep(5)
 			clear = lambda: os.system('cls')
 			clear()
@@ -599,18 +599,23 @@ def float_test(examine):
 					print(f"\t{val} appears to be a float number and acceptable to evaluate.")
 					time.sleep(1)
 				except ValueError:
-					print(f"\t{examine} is a string and not acceptable to evaluate.")
-					print(f"\tThe program will reset in five seconds.")
+					print(f"\t\n'{examine}' is a string and not acceptable to evaluate.\n")
+					print(f"The program will reset in five seconds.")
 					time.sleep(5)
 					clear = lambda: os.system('cls')
 					clear()
 					main_program()
 
-
+# Breaking out copyright/credit and allow for sub-routine
 def main_program():
 	print("-=-=   Cosmic Matter - Unit Converter     =-=-")
 	print("-=-=   by: Ira Bell       Version 0.1     =-=-")
 	print("-=-=   Copyright (c) 2022 Space Elements  =-=-")
+	sub_program()
+
+# Main sub-routine
+def sub_program():
+	
 	while True:
 		print(f"\nPlease input the unit classification you would like to convert from\n(note: this is case sensitive)\n\n[Options]:\n\n[mi, m, km, cm, mm, micrometers, nm, yd, ft, in, NM, ly, pc, \nkpc, Mpc, AU], 'cls' to clear screen or 'q' to quit.")
 		
@@ -765,8 +770,9 @@ def main_program():
 		else:
 			clear = lambda: os.system('cls')
 			clear()
-		main_program()
-	main_program()
+			main_program()
+		sub_program()
+	sub_program()
 
 # Run main program 
 main_program()
